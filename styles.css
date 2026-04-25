@@ -1,0 +1,103 @@
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 2rem 0;
+    border: 5px solid #3498db;
+}
+
+
+.about {
+    background: white;
+}
+
+.about-text h3 {
+    margin-top: 1.5rem;
+    color: #3498db;
+}
+
+
+.projects {
+    background: #f8f9fa;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.project-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+
+.contact {
+    text-align: center;
+}
+
+.contact-content p {
+    margin: 1rem 0;
+    font-size: 1.1rem;
+}
+
+.contact-content i {
+    color: #3498db;
+    margin-right: 0.5rem;
+}
+
+.social-links a {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin: 0 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #3498db;
+}
+
+
+footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+
+@media (max-width: 768px) {
+    nav .nav-links {
+        position: absolute;
+        right: 0;
+        top: 60px;
+        background: #2c3e50;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        display: none;
+    }
+
+    nav .nav-links.active {
+        display: flex;
+    }
+
+    nav .nav-links li {
+        margin: 1rem 0;
+    }
+
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+    }
+}
